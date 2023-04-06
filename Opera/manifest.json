@@ -1,0 +1,28 @@
+{
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "codehemu-content-script.js" ],
+      "matches": [ "*://www.youtube.com/*","*://youtube.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extShortDesc__",
+   "host_permissions": [ "*://www.youtube.com/*" ],
+   "homepage_url": "https://www.downloadhub.cloud/2023/01/loop.html",
+   "icons": {
+      "128": "icon/128.png",
+      "64": "icon/64.png",
+      "48": "icon/48.png"
+   },
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "version": "1.0.2",
+   "short_name": "Ctube",
+   "web_accessible_resources": [ {
+      "matches": [ "*://www.youtube.com/*" ],
+      "resources": [ "icon/*" ]
+   } ]
+}
